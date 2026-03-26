@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jazim | 3D Interactive Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="hero section-3d" data-depth="16">
+      <div class="hero__content glass">
+        <p class="hero__badge">Student Creator • Age 11</p>
+        <h1>
+          Hi! I'm <span class="gradient-text">Jazim</span><br />
+          I build cool things on the web.
+        </h1>
+        <p class="hero__subtitle">
+          Welcome to my interactive 3D-style portfolio. Move your mouse, scroll,
+          and explore my projects!
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">See My Projects</a>
+          <a href="#about" class="btn btn--ghost">About Me</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section section-3d" data-depth="10">
+        <h2>About Me</h2>
+        <div class="glass about-card tilt-card">
+          <p>
+            I'm Jazim, an 11-year-old student who loves coding, design, and
+            animation. I enjoy turning ideas into fun websites with colorful
+            visuals and smooth interactions.
+          </p>
+          <ul>
+            <li>💻 Learning HTML, CSS, and JavaScript</li>
+            <li>🎨 Love designing futuristic interfaces</li>
+            <li>🚀 Dream: become a game & web creator</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+          <article class="project-card tilt-card glass">
+            <h3>Space Explorer Page</h3>
+            <p>
+              A scrolling page with planets, glow effects, and animated stars.
+            </p>
+            <span class="chip">HTML + CSS</span>
+          </article>
+          <article class="project-card tilt-card glass">
+            <h3>Mini Quiz Game</h3>
+            <p>
+              A JavaScript game where players answer fun questions and get a
+              score.
+            </p>
+            <span class="chip">JavaScript</span>
+          </article>
+          <article class="project-card tilt-card glass">
+            <h3>Robot Landing Page</h3>
+            <p>
+              A modern animated landing page with buttons, shadows, and hover
+              effects.
+            </p>
+            <span class="chip">UI Design</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-3d" data-depth="8">
+        <h2>Let's Connect</h2>
+        <div class="glass contact-box tilt-card">
+          <p>
+            Thanks for visiting my portfolio! If you want to build something
+            awesome with me, say hi.
+          </p>
+          <a class="btn btn--primary" href="mailto:jazim@example.com"
+            >Email Jazim</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Jazim's Portfolio • Made with curiosity ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
